@@ -19,38 +19,45 @@ a {
 }
 
 .hero {
-  padding: 90px 24px;
+  padding: 88px 24px;
   background: linear-gradient(135deg, #111827, #374151);
   color: white;
 }
 
 .hero > div,
 main {
-  max-width: 1000px;
+  max-width: 980px;
   margin: 0 auto;
+}
+
+.hero .badge {
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
 }
 
 .badge {
   display: inline-block;
   margin: 0 0 16px;
-  padding: 8px 14px;
+  padding: 7px 13px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.14);
-  font-size: 14px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: 42px;
-  line-height: 1.2;
+  font-size: 44px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
 }
 
 .hero-text {
-  max-width: 680px;
-  margin: 24px 0 0;
-  font-size: 20px;
-  line-height: 1.7;
+  max-width: 720px;
+  margin: 22px 0 0;
+  font-size: 19px;
+  line-height: 1.8;
   color: #e5e7eb;
 }
 
@@ -58,7 +65,7 @@ main {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .hero-buttons a,
@@ -69,26 +76,30 @@ main {
   background: white;
   color: #111827;
   font-weight: 700;
+  font-size: 14px;
 }
 
 main {
-  padding: 48px 24px;
-  font-size: 16px;
+  padding: 56px 24px;
 }
 
 .section {
   margin-bottom: 56px;
+  text-align: left;
 }
 
 .section h2 {
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   font-size: 30px;
   color: #111827;
+  letter-spacing: -0.02em;
 }
 
-.section p {
-  line-height: 1.8;
+.section > p {
+  max-width: 820px;
+  line-height: 1.85;
   font-size: 17px;
+  margin: 0 0 14px;
 }
 
 .skill-grid {
@@ -103,37 +114,55 @@ main {
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 18px;
-  padding: 24px;
+  padding: 26px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  text-align: left;
 }
 
 .card h3,
 .project-card h3,
 .problem-card h3 {
-  margin-top: 0;
+  margin: 0 0 12px;
   color: #111827;
+  font-size: 20px;
+  letter-spacing: -0.02em;
 }
 
-.project-card .badge {
-  background: #eef2ff;
-  color: #3730a3;
+.card p,
+.project-card p,
+.problem-card p {
+  margin: 0 0 12px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.project-card h4 {
+  margin: 26px 0 12px;
+  font-size: 18px;
+  color: #111827;
 }
 
 .project-info {
   margin: 24px 0;
-  padding: 18px;
+  padding: 18px 20px;
   border-radius: 14px;
   background: #f9fafb;
 }
 
 .project-info p {
-  margin: 6px 0;
+  margin: 7px 0;
+  line-height: 1.7;
 }
 
 ul {
-  padding-left: 24px;
+  margin: 0;
+  padding-left: 22px;
   line-height: 1.9;
   font-size: 16px;
+}
+
+li {
+  margin-bottom: 4px;
 }
 
 .link-row {
@@ -147,6 +176,10 @@ ul {
 
 .problem-card {
   margin-bottom: 18px;
+}
+
+.problem-card h3 {
+  font-size: 19px;
 }
 
 .contact a {
@@ -174,4 +207,21 @@ ul {
   main {
     padding: 40px 20px;
   }
+
+  .card,
+  .project-card,
+  .problem-card {
+    padding: 22px;
+  }
+  .role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 720px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
+}
 }
