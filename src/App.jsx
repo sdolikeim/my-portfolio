@@ -265,82 +265,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section study-project">
-          <p className="section-kicker">Study Project</p>
-          <h2>WebSocket 상담 알림 실습</h2>
-
-          <div className="study-card">
-            <div className="study-content">
-              <p className="study-badge">React + Spring Boot + Oracle + WebSocket</p>
-
-              <h3>실시간 알림 구조를 이해하기 위한 미니 실습 프로젝트</h3>
-
-              <p>
-                기존 3H_FURNITURE 프로젝트와는 별도로, WebSocket 기반 실시간 알림 구조를
-                이해하기 위해 진행한 실습 프로젝트입니다. 사용자가 상담 문의를 등록하면
-                Oracle DB에 상담 데이터가 저장되고, 관리자 화면에는 WebSocket 알림이
-                전송되도록 구현했습니다.
-              </p>
-
-              <p>
-                관리자가 답변을 등록하면 상담 상태가 WAITING에서 ANSWERED로 변경되고,
-                사용자 화면에 답변 완료 알림이 표시되도록 구성했습니다. 이를 통해 HTTP
-                요청/응답 방식과 WebSocket 기반 연결 유지 방식의 차이를 학습했습니다.
-              </p>
-
-              <div className="study-flow">
-                <span>문의 등록</span>
-                <span>DB 저장</span>
-                <span>관리자 알림</span>
-                <span>답변 등록</span>
-                <span>사용자 알림</span>
-              </div>
-
-              <div className="study-links">
-                <a
-                  href="https://github.com/sdolikeim/socket-notification-practice"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub Repository
-                </a>
-              </div>
-            </div>
-
-            <div className="study-image-wrap">
-              <a href="/images/websocket_practice.JPG" target="_blank" rel="noreferrer">
-                <img
-                  src="/images/websocket_practice.JPG"
-                  alt="WebSocket 상담 알림 실습 화면"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div className="study-tech-grid">
-            <div className="study-tech-card">
-              <strong>Frontend</strong>
-              <p>React, Axios, STOMP, SockJS</p>
-            </div>
-
-            <div className="study-tech-card">
-              <strong>Backend</strong>
-              <p>Java, Spring Boot, JPA, WebSocket</p>
-            </div>
-
-            <div className="study-tech-card">
-              <strong>Database</strong>
-              <p>Oracle, QueryBox</p>
-            </div>
-
-            <div className="study-tech-card">
-              <strong>Learning Point</strong>
-              <p>HTTP 요청/응답과 WebSocket 알림 흐름 비교</p>
-            </div>
-          </div>
-        </section>
-
-
+        
         <section className="section">
           <h2>Screenshots</h2>
           <p className="section-desc">
@@ -517,6 +442,99 @@ function App() {
             </p>
           </div>
         </section>
+        
+    <section className="section study-section">
+      <div className="section-head">
+        <p className="section-kicker">Study Project</p>
+        <h2>WebSocket 상담 알림 실습</h2>
+        <p>
+          기존 DB 기반 상담 문의/답변 흐름에서 확장하여, 실시간 알림 구조를 이해하기 위해
+          별도로 진행한 미니 실습 프로젝트입니다.
+        </p>
+      </div>
+
+      <div className="study-showcase">
+        <div className="study-main">
+          <div className="study-label-row">
+            <span>React</span>
+            <span>Spring Boot</span>
+            <span>Oracle</span>
+            <span>WebSocket</span>
+          </div>
+
+          <h3>상담 등록부터 관리자 답변 알림까지 이어지는 흐름 구현</h3>
+
+          <p>
+            사용자가 상담 문의를 등록하면 Oracle DB에 데이터가 저장되고, 관리자 화면에는
+            WebSocket 알림이 전송되도록 구현했습니다. 관리자가 답변을 등록하면 상담 상태가
+            <strong> WAITING </strong>에서 <strong> ANSWERED </strong>로 변경되며,
+            사용자 화면에 답변 완료 알림이 표시됩니다.
+          </p>
+
+          <div className="study-process">
+            <div>
+              <strong>01</strong>
+              <span>문의 등록</span>
+            </div>
+            <div>
+              <strong>02</strong>
+              <span>DB 저장</span>
+            </div>
+            <div>
+              <strong>03</strong>
+              <span>관리자 알림</span>
+            </div>
+            <div>
+              <strong>04</strong>
+              <span>답변 등록</span>
+            </div>
+            <div>
+              <strong>05</strong>
+              <span>사용자 알림</span>
+            </div>
+          </div>
+
+          <div className="study-point-box">
+            <p>
+              <strong>학습 포인트</strong>
+              HTTP 요청/응답 방식과 WebSocket 기반 연결 유지 방식의 차이를 직접 비교하며 학습했습니다.
+              완성형 서비스보다는 실시간 알림 흐름을 이해하기 위한 별도 실습 프로젝트로 진행했습니다.
+            </p>
+          </div>
+
+          <a
+            className="study-link"
+            href="https://github.com/sdolikeim/socket-notification-practice"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub Repository
+          </a>
+        </div>
+
+        <div className="study-preview-area">
+          <div className="study-preview main-preview">
+            <a href="/images/websocket_practice.JPG" target="_blank" rel="noreferrer">
+              <img src="/images/websocket_practice.JPG" alt="WebSocket 상담 알림 실습 기본 화면" />
+            </a>
+            <div className="study-caption">
+              <strong>상담 등록 전 화면</strong>
+              <span>사용자 문의 등록과 관리자 상담 관리 화면 구성</span>
+            </div>
+          </div>
+
+          <div className="study-preview">
+            <a href="/images/websocket_practice_answer.JPG" target="_blank" rel="noreferrer">
+              <img src="/images/websocket_practice_answer.JPG" alt="WebSocket 상담 답변 완료 화면" />
+            </a>
+            <div className="study-caption">
+              <strong>답변 완료 화면</strong>
+              <span>답변 등록 후 ANSWERED 상태와 사용자 알림 표시</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
         <section className="section">
           <h2>Resume Statement</h2>
