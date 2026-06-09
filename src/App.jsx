@@ -8,7 +8,8 @@ function App() {
           <p className="badge hero-badge">Backend / Full-stack Developer</p>
           <h1>Java/Spring Boot 백엔드 개발자</h1>
           <p className="hero-text">
-            사용자 흐름과 예외 상황을 고려하며 안정적인 API와 서비스 기능을 구현하는 개발자입니다.
+            기능이 단순히 동작하는 것에서 끝나지 않고, 사용자의 흐름과 예외 상황까지
+            함께 확인하며 안정적인 서비스를 구현하려는 개발자입니다.
           </p>
 
           <div className="hero-buttons">
@@ -26,14 +27,44 @@ function App() {
         <section className="section">
           <h2>About Me</h2>
           <p>
-            Java/Spring Boot 기반으로 상품 조회, 상품 관리, 이미지 업로드/삭제, 리뷰 검증,
-            북마크, 페이지네이션, DB 기반 상담 문의 기능을 구현한 신입 백엔드 개발자입니다.
+            저는 기능이 단순히 동작하는 것에서 끝나지 않고, 사용자가 실제로 어떤 흐름으로
+            기능을 이용하는지까지 확인하려고 하는 신입 백엔드 개발자입니다.
           </p>
           <p>
-            기능 구현에서 끝나지 않고 사용자의 실제 이용 흐름, 예외 상황, 데이터 정합성을 함께
-            고려하려고 합니다. 팀 프로젝트에서는 상품 도메인을 중심으로 관리자 상품 관리,
-            리뷰/북마크, 상담 문의/답변 흐름을 구현했습니다.
+            Java/Spring Boot 기반으로 상품 조회, 관리자 상품 관리, 이미지 업로드/삭제,
+            리뷰 검증, 북마크, DB 기반 상담 문의/답변 기능을 구현했습니다. 구현한 기능이
+            화면과 데이터 흐름에서 자연스럽게 이어지는지 계속 확인하고 보완하려는 편입니다.
           </p>
+        </section>
+
+        <section className="section">
+          <h2>My Values</h2>
+
+          <div className="value-grid">
+            <div className="card">
+              <h3>흐름을 놓치지 않는 꼼꼼함</h3>
+              <p>
+                기능이 동작하는 것에서 끝나지 않고, 사용자가 기능을 사용한 다음
+                어디에서 결과를 확인하는지까지 함께 고려합니다.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>예외 상황까지 확인하는 태도</h3>
+              <p>
+                이미지 삭제, 리뷰 중복 작성, 상담 답변 상태처럼 정상 흐름 뒤에 생길 수 있는
+                데이터 불일치와 예외 상황을 함께 확인하려고 합니다.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>부족함을 정리해 보완하는 성장 방식</h3>
+              <p>
+                모르는 부분을 그냥 넘기지 않고, 기능 흐름과 데이터 흐름을 정리하며
+                다시 설명할 수 있을 때까지 이해하려고 노력합니다.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="section">
@@ -163,7 +194,7 @@ function App() {
               <li>상품 목록 조회 API와 React 화면 연동</li>
               <li>카테고리별 상품 필터링 처리</li>
               <li>판매상태 조건에 따른 상품 조회 처리</li>
-              <li>기본순, 가격순 등 정렬 조건 처리</li>
+              <li>정렬 조건 처리</li>
               <li>페이지네이션 적용으로 한 번에 표시되는 상품 수 제어</li>
             </ul>
           </div>
@@ -242,7 +273,9 @@ function App() {
 
           <div className="image-grid">
             <div className="image-card">
-              <img src="/images/product-list.JPG" alt="상품 목록 화면" />
+              <a href="/images/product-list.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/product-list.JPG" alt="상품 목록 화면" />
+              </a>
               <div>
                 <h3>상품 목록</h3>
                 <p>
@@ -252,7 +285,9 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/product-detail.JPG" alt="상품 상세 화면" />
+              <a href="/images/product-detail.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/product-detail.JPG" alt="상품 상세 화면" />
+              </a>
               <div>
                 <h3>상품 상세</h3>
                 <p>
@@ -262,7 +297,9 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/admin-product-list.JPG" alt="관리자 상품 목록 화면" />
+              <a href="/images/admin-product-list.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/admin-product-list.JPG" alt="관리자 상품 목록 화면" />
+              </a>
               <div>
                 <h3>관리자 상품 관리</h3>
                 <p>
@@ -272,7 +309,9 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/product-update.JPG" alt="상품 수정 화면" />
+              <a href="/images/product-update.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/product-update.JPG" alt="상품 수정 화면" />
+              </a>
               <div>
                 <h3>상품 수정</h3>
                 <p>
@@ -282,7 +321,9 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/bookmark-list.JPG" alt="북마크 목록 화면" />
+              <a href="/images/bookmark-list.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/bookmark-list.JPG" alt="북마크 목록 화면" />
+              </a>
               <div>
                 <h3>북마크 목록</h3>
                 <p>
@@ -292,7 +333,9 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/review-management.JPG" alt="리뷰 관리 화면" />
+              <a href="/images/review-management.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/review-management.JPG" alt="리뷰 관리 화면" />
+              </a>
               <div>
                 <h3>리뷰 관리</h3>
                 <p>
@@ -302,7 +345,9 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/article-widget.JPG" alt="상담 문의창 화면" />
+              <a href="/images/article-widget.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/article-widget.JPG" alt="상담 문의창 화면" />
+              </a>
               <div>
                 <h3>상담 문의창</h3>
                 <p>
@@ -312,7 +357,9 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/admin-article-answer.jpg" alt="관리자 상담 답변 화면" />
+              <a href="/images/admin-article-answer.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/admin-article-answer.JPG" alt="관리자 상담 답변 화면" />
+              </a>
               <div>
                 <h3>관리자 상담 답변</h3>
                 <p>
@@ -322,7 +369,9 @@ function App() {
             </div>
 
             <div className="image-card image-card-wide">
-              <img src="/images/member-article-answer.JPG" alt="회원 상담 답변 확인 화면" />
+              <a href="/images/member-article-answer.JPG" target="_blank" rel="noreferrer">
+                <img src="/images/member-article-answer.JPG" alt="회원 상담 답변 확인 화면" />
+              </a>
               <div>
                 <h3>회원 상담 답변 확인</h3>
                 <p>
@@ -389,6 +438,29 @@ function App() {
             <p>
               사용자는 상담창에서 본인의 상담 내역을 다시 조회하여 답변 완료 여부와
               관리자 답변 내용을 확인할 수 있도록 개선했습니다.
+            </p>
+          </div>
+        </section>
+
+        <section className="section">
+          <h2>Resume Statement</h2>
+
+          <div className="statement-card">
+            <p>
+              프로젝트를 진행하며 가장 많이 생각했던 부분은 “사용자가 이 기능을 사용한 다음에는
+              무엇을 확인하게 될까?”였습니다. 북마크 기능은 버튼을 누르는 것에서 끝나는 것이 아니라,
+              사용자가 마이페이지에서 북마크한 상품을 다시 확인하고 상품 상세로 이동할 수 있어야 했습니다.
+            </p>
+
+            <p>
+              상담 기능도 문의 등록에서 끝나는 것이 아니라, 관리자가 답변을 등록하고 사용자가 다시
+              상담창에서 답변 상태와 내용을 확인할 수 있도록 구성했습니다.
+            </p>
+
+            <p>
+              아직 실무 경험은 부족하지만, 맡은 기능을 그냥 넘기지 않고 끝까지 이해하려고 노력합니다.
+              앞으로도 기능의 정상 동작뿐 아니라 사용자의 다음 행동과 예외 상황까지 함께 확인하는
+              개발자로 성장하고 싶습니다.
             </p>
           </div>
         </section>
