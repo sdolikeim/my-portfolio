@@ -357,8 +357,8 @@ function App() {
             </div>
 
             <div className="image-card">
-              <a href="/images/admin-article-answer.JPG" target="_blank" rel="noreferrer">
-                <img src="/images/admin-article-answer.JPG" alt="관리자 상담 답변 화면" />
+              <a href="/images/admin-article-answer.jpg" target="_blank" rel="noreferrer">
+                <img src="/images/admin-article-answer.jpg" alt="관리자 상담 답변 화면" />
               </a>
               <div>
                 <h3>관리자 상담 답변</h3>
