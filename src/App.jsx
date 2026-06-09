@@ -13,7 +13,7 @@ function App() {
           </p>
 
           <div className="hero-buttons">
-            <a href="https://github.com/alphaengneering02-dev" target="_blank" rel="noreferrer">
+            <a href="https://github.com/sdolikeim" target="_blank" rel="noreferrer">
               GitHub
             </a>
             <a href="https://github.com/alphaengneering02-dev/3H_Furniture" target="_blank" rel="noreferrer">
@@ -485,8 +485,8 @@ function App() {
 
           <p>
             GitHub:{' '}
-            <a href="https://github.com/alphaengneering02-dev" target="_blank" rel="noreferrer">
-              https://github.com/alphaengneering02-dev
+            <a href="https://github.com/sdolikeim" target="_blank" rel="noreferrer">
+              https://github.com/sdolikeim
             </a>
           </p>
 
