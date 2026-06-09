@@ -312,7 +312,7 @@ function App() {
             </div>
 
             <div className="image-card">
-              <img src="/images/admin-article-answer.JPG" alt="관리자 상담 답변 화면" />
+              <img src="/images/admin-article-answer.jpg" alt="관리자 상담 답변 화면" />
               <div>
                 <h3>관리자 상담 답변</h3>
                 <p>
