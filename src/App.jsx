@@ -8,8 +8,8 @@ function App() {
           <p className="badge hero-badge">Backend / Full-stack Developer</p>
           <h1>Java/Spring Boot 백엔드 개발자</h1>
           <p className="hero-text">
-            기능이 단순히 동작하는 것에서 끝나지 않고, 사용자의 흐름과 예외 상황까지
-            함께 확인하며 안정적인 서비스를 구현하려는 개발자입니다.
+            Java와 Spring Boot를 중심으로 REST API, 데이터 흐름, 예외 처리를 학습하며
+            사용자가 실제로 확인할 수 있는 기능을 끝까지 구현하려는 백엔드 개발자입니다.
           </p>
 
           <div className="hero-buttons">
@@ -27,13 +27,14 @@ function App() {
         <section className="section">
           <h2>About Me</h2>
           <p>
-            저는 기능이 단순히 동작하는 것에서 끝나지 않고, 사용자가 실제로 어떤 흐름으로
-            기능을 이용하는지까지 확인하려고 하는 신입 백엔드 개발자입니다.
+            Java/Spring Boot 백엔드 개발자를 목표로 학습하고 있습니다.
+            팀 프로젝트에서는 상품 도메인을 담당하여 상품 조회, 관리자 상품 관리,
+            이미지 업로드/삭제, 리뷰 검증, 북마크, 상담 문의/답변 기능을 구현했습니다.
           </p>
           <p>
-            Java/Spring Boot 기반으로 상품 조회, 관리자 상품 관리, 이미지 업로드/삭제,
-            리뷰 검증, 북마크, DB 기반 상담 문의/답변 기능을 구현했습니다. 구현한 기능이
-            화면과 데이터 흐름에서 자연스럽게 이어지는지 계속 확인하고 보완하려는 편입니다.
+            기능을 구현한 뒤에는 화면 동작뿐 아니라 DB 저장 결과, 사용자 흐름,
+            예외 상황까지 함께 확인하려고 합니다. 부족한 부분은 미니 프로젝트로 따로 실습하며
+            백엔드 API, 프론트엔드 연동, Docker 실행 환경까지 경험을 넓혀가고 있습니다.
           </p>
         </section>
 
@@ -44,24 +45,24 @@ function App() {
             <div className="card">
               <h3>흐름을 놓치지 않는 꼼꼼함</h3>
               <p>
-                기능이 동작하는 것에서 끝나지 않고, 사용자가 기능을 사용한 다음
-                어디에서 결과를 확인하는지까지 함께 고려합니다.
+                기능이 한 화면에서 동작하는 것만 확인하지 않고, 사용자가 다음에 어떤 화면에서
+                결과를 확인하는지까지 함께 고려하려고 합니다.
               </p>
             </div>
 
             <div className="card">
-              <h3>예외 상황까지 확인하는 태도</h3>
+              <h3>데이터까지 확인하는 습관</h3>
               <p>
-                이미지 삭제, 리뷰 중복 작성, 상담 답변 상태처럼 정상 흐름 뒤에 생길 수 있는
-                데이터 불일치와 예외 상황을 함께 확인하려고 합니다.
+                화면에 보이는 결과뿐 아니라 DB 저장 상태, 삭제 처리, 상태 변경처럼
+                기능 뒤에서 이어지는 데이터 흐름도 함께 확인합니다.
               </p>
             </div>
 
             <div className="card">
-              <h3>부족함을 정리해 보완하는 성장 방식</h3>
+              <h3>부족함을 실습으로 보완하는 태도</h3>
               <p>
-                모르는 부분을 그냥 넘기지 않고, 기능 흐름과 데이터 흐름을 정리하며
-                다시 설명할 수 있을 때까지 이해하려고 노력합니다.
+                팀 프로젝트에서 부족하다고 느낀 부분은 작은 실습 프로젝트로 다시 만들어보며
+                개념과 흐름을 정리하려고 합니다.
               </p>
             </div>
           </div>
@@ -82,12 +83,12 @@ function App() {
 
             <div className="card">
               <h3>Database</h3>
-              <p>Oracle, SQL</p>
+              <p>Oracle, PostgreSQL, SQL</p>
             </div>
 
             <div className="card">
               <h3>Tools</h3>
-              <p>Git, GitHub, VS Code, Postman, Docker</p>
+              <p>Git, GitHub, VS Code, Postman, Thunder Client, Docker, Docker Compose</p>
             </div>
           </div>
         </section>
@@ -102,8 +103,8 @@ function App() {
             <p>
               3H_FURNITURE는 사용자가 가구 상품을 조회·구매하고, 관리자가 상품 정보를
               등록·수정·삭제할 수 있는 가구 판매 웹 서비스입니다. 저는 상품 도메인을 담당하여
-              상품 조회, 관리자 상품 관리, 이미지 업로드/삭제, 리뷰 검증, 북마크, 상담 문의/답변
-              기능을 구현했습니다.
+              상품 조회, 관리자 상품 관리, 이미지 업로드/삭제, 리뷰 검증, 북마크,
+              상담 문의/답변 기능을 구현했습니다.
             </p>
 
             <div className="project-info">
@@ -156,7 +157,7 @@ function App() {
             <div className="card">
               <h3>이미지 업로드/삭제</h3>
               <p>
-                상품 이미지 등록 및 삭제 기능을 구현했습니다. 삭제 시 DB 데이터뿐 아니라
+                상품 이미지 등록 및 삭제 기능을 구현했습니다. 이미지 삭제 시 DB 데이터뿐 아니라
                 서버에 저장된 물리 파일까지 함께 정리되도록 처리했습니다.
               </p>
             </div>
@@ -187,8 +188,8 @@ function App() {
             <h3>01. 상품 목록 조회 / 필터 / 정렬 / 페이지네이션</h3>
             <p>
               사용자가 원하는 상품을 빠르게 찾을 수 있도록 상품 목록 조회 기능을 구현했습니다.
-              카테고리 조건, 판매상태 조건, 정렬 조건, 페이지 정보를 함께 처리하여 조건에 맞는
-              상품 목록을 조회할 수 있도록 구성했습니다.
+              카테고리 조건, 판매상태 조건, 정렬 조건, 페이지 정보를 함께 처리하여
+              조건에 맞는 상품 목록을 조회할 수 있도록 구성했습니다.
             </p>
             <ul>
               <li>상품 목록 조회 API와 React 화면 연동</li>
@@ -218,9 +219,9 @@ function App() {
           <div className="detail-card">
             <h3>03. 이미지 업로드 / 삭제</h3>
             <p>
-              상품 등록 및 수정 과정에서 상품 이미지를 함께 관리할 수 있도록 이미지 업로드와 삭제
-              기능을 구현했습니다. 이미지 삭제 시에는 DB 데이터뿐 아니라 서버에 저장된 실제 파일까지
-              함께 삭제되도록 처리했습니다.
+              상품 등록 및 수정 과정에서 상품 이미지를 함께 관리할 수 있도록
+              이미지 업로드와 삭제 기능을 구현했습니다. 이미지 삭제 시에는 DB 데이터뿐 아니라
+              서버에 저장된 실제 파일까지 함께 삭제되도록 처리했습니다.
             </p>
             <ul>
               <li>상품 대표 이미지 및 상세 이미지 업로드 기능 구현</li>
@@ -235,8 +236,8 @@ function App() {
             <h3>04. 리뷰 검증 / 북마크</h3>
             <p>
               사용자가 상품에 리뷰를 작성하고 북마크할 수 있도록 관련 기능을 구현했습니다.
-              리뷰의 경우 동일 사용자가 같은 상품에 여러 번 리뷰를 작성하지 못하도록 검증 로직을
-              적용했습니다.
+              리뷰의 경우 동일 사용자가 같은 상품에 여러 번 리뷰를 작성하지 못하도록
+              검증 로직을 적용했습니다.
             </p>
             <ul>
               <li>리뷰 작성 조건 검증 구현</li>
@@ -250,8 +251,9 @@ function App() {
           <div className="detail-card">
             <h3>05. DB 기반 상담 문의 / 관리자 답변 기능</h3>
             <p>
-              사용자가 쇼핑몰 이용 중 궁금한 내용을 상담창을 통해 남기고, 관리자가 관리자 페이지에서
-              문의를 확인한 뒤 답변을 등록할 수 있는 상담 문의 기능을 구현했습니다.
+              사용자가 쇼핑몰 이용 중 궁금한 내용을 상담창을 통해 남기고,
+              관리자가 관리자 페이지에서 문의를 확인한 뒤 답변을 등록할 수 있는
+              상담 문의 기능을 구현했습니다.
             </p>
             <ul>
               <li>사용자 상담 문의 등록 기능 구현</li>
@@ -265,7 +267,6 @@ function App() {
           </div>
         </section>
 
-        
         <section className="section">
           <h2>Screenshots</h2>
           <p className="section-desc">
@@ -387,7 +388,7 @@ function App() {
           <h2>Problem Solving</h2>
 
           <div className="problem-card">
-            <h3>01. 상품 이미지 삭제 시 물리 파일이 남는 문제 해결</h3>
+            <h3>01. 상품 이미지 삭제 시 물리적 파일이 남는 문제 해결</h3>
             <p>
               상품 이미지 삭제 기능 구현 중 DB에 저장된 이미지 데이터는 삭제되었지만,
               서버에 저장된 실제 이미지 파일은 그대로 남는 문제가 있었습니다.
@@ -397,11 +398,11 @@ function App() {
               않았기 때문이었습니다.
             </p>
             <p>
-              이를 해결하기 위해 이미지 URL을 기준으로 실제 파일 경로를 계산하고, DB 삭제 로직과
-              물리 파일 삭제 로직을 분리하여 함께 처리했습니다.
+              이를 해결하기 위해 이미지 URL을 기준으로 실제 파일 경로를 계산하고,
+              DB 삭제 로직과 물리적 파일 삭제 로직을 분리하여 함께 처리했습니다.
             </p>
             <p>
-              그 결과 상품 이미지 삭제 시 DB 데이터와 서버의 물리 파일이 함께 삭제되도록 개선하여
+              그 결과 상품 이미지 삭제 시 DB 데이터와 서버의 물리적 파일이 함께 삭제되도록 개선하여
               불필요한 파일 누적을 방지했습니다.
             </p>
           </div>
@@ -425,8 +426,8 @@ function App() {
           <div className="problem-card">
             <h3>03. DB 기반 상담 문의 흐름 구현</h3>
             <p>
-              WebSocket을 사용한 실시간 채팅 구조는 아니지만, 사용자가 쇼핑몰 이용 중
-              빠르게 문의를 남기고 답변 상태를 확인할 수 있는 상담 UI가 필요했습니다.
+              실시간 채팅 구조는 아니지만, 사용자가 쇼핑몰 이용 중 빠르게 문의를 남기고
+              답변 상태를 확인할 수 있는 상담 UI가 필요했습니다.
             </p>
             <p>
               상담 문의를 ARTICLE 테이블에 저장하고, 회원 ID와 상품 ID를 함께 관리하여
@@ -442,99 +443,214 @@ function App() {
             </p>
           </div>
         </section>
-        
-    <section className="section study-section">
-      <div className="section-head">
-        <p className="section-kicker">Study Project</p>
-        <h2>WebSocket 상담 알림 실습</h2>
-        <p>
-          기존 DB 기반 상담 문의/답변 흐름에서 확장하여, 실시간 알림 구조를 이해하기 위해
-          별도로 진행한 미니 실습 프로젝트입니다.
-        </p>
-      </div>
 
-      <div className="study-showcase">
-        <div className="study-main">
-          <div className="study-label-row">
-            <span>React</span>
-            <span>Spring Boot</span>
-            <span>Oracle</span>
-            <span>WebSocket</span>
-          </div>
-
-          <h3>상담 등록부터 관리자 답변 알림까지 이어지는 흐름 구현</h3>
-
-          <p>
-            사용자가 상담 문의를 등록하면 Oracle DB에 데이터가 저장되고, 관리자 화면에는
-            WebSocket 알림이 전송되도록 구현했습니다. 관리자가 답변을 등록하면 상담 상태가
-            <strong> WAITING </strong>에서 <strong> ANSWERED </strong>로 변경되며,
-            사용자 화면에 답변 완료 알림이 표시됩니다.
-          </p>
-
-          <div className="study-process">
-            <div>
-              <strong>01</strong>
-              <span>문의 등록</span>
-            </div>
-            <div>
-              <strong>02</strong>
-              <span>DB 저장</span>
-            </div>
-            <div>
-              <strong>03</strong>
-              <span>관리자 알림</span>
-            </div>
-            <div>
-              <strong>04</strong>
-              <span>답변 등록</span>
-            </div>
-            <div>
-              <strong>05</strong>
-              <span>사용자 알림</span>
-            </div>
-          </div>
-
-          <div className="study-point-box">
+        <section className="section study-section">
+          <div className="section-head">
+            <p className="section-kicker">Mini Practice Project</p>
+            <h2>WebSocket 상담 알림 실습</h2>
             <p>
-              <strong>학습 포인트</strong>
-              HTTP 요청/응답 방식과 WebSocket 기반 연결 유지 방식의 차이를 직접 비교하며 학습했습니다.
-              완성형 서비스보다는 실시간 알림 흐름을 이해하기 위한 별도 실습 프로젝트로 진행했습니다.
+              팀 프로젝트에서 구현한 DB 기반 상담 문의/답변 흐름을 확장해보기 위해
+              별도로 진행한 WebSocket 알림 미니 실습 프로젝트입니다.
             </p>
           </div>
 
-          <a
-            className="study-link"
-            href="https://github.com/sdolikeim/socket-notification-practice"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub Repository
-          </a>
-        </div>
+          <div className="study-showcase">
+            <div className="study-main">
+              <div className="study-label-row">
+                <span>React</span>
+                <span>Spring Boot</span>
+                <span>Oracle</span>
+                <span>WebSocket</span>
+              </div>
 
-        <div className="study-preview-area">
-          <div className="study-preview main-preview">
-            <a href="/images/websocket_practice.JPG" target="_blank" rel="noreferrer">
-              <img src="/images/websocket_practice.JPG" alt="WebSocket 상담 알림 실습 기본 화면" />
-            </a>
-            <div className="study-caption">
-              <strong>상담 등록 전 화면</strong>
-              <span>사용자 문의 등록과 관리자 상담 관리 화면 구성</span>
+              <h3>상담 등록과 답변 완료 알림 흐름 구현</h3>
+
+              <p>
+                사용자가 상담 문의를 등록하면 Oracle DB에 데이터가 저장되고,
+                관리자 화면에는 WebSocket 알림이 전송되도록 구현했습니다.
+                관리자가 답변을 등록하면 상담 상태가 <strong> WAITING </strong>에서
+                <strong> ANSWERED </strong>로 변경되며, 사용자 화면에 답변 완료 알림이 표시됩니다.
+              </p>
+
+              <div className="study-process">
+                <div>
+                  <strong>01</strong>
+                  <span>문의 등록</span>
+                </div>
+                <div>
+                  <strong>02</strong>
+                  <span>DB 저장</span>
+                </div>
+                <div>
+                  <strong>03</strong>
+                  <span>관리자 알림</span>
+                </div>
+                <div>
+                  <strong>04</strong>
+                  <span>답변 등록</span>
+                </div>
+                <div>
+                  <strong>05</strong>
+                  <span>사용자 알림</span>
+                </div>
+              </div>
+
+              <div className="study-point-box">
+                <p>
+                  <strong>학습 포인트</strong>
+                  HTTP 요청/응답 방식과 WebSocket 기반 연결 유지 방식의 차이를 비교하기 위해 진행했습니다.
+                  완성형 서비스보다는 실시간 알림 흐름을 이해하기 위한 미니 실습 프로젝트입니다.
+                </p>
+              </div>
+
+              <a
+                className="study-link"
+                href="https://github.com/sdolikeim/socket-notification-practice"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Repository
+              </a>
+            </div>
+
+            <div className="study-preview-area">
+              <div className="study-preview main-preview">
+                <a href="/images/websocket_practice.JPG" target="_blank" rel="noreferrer">
+                  <img src="/images/websocket_practice.JPG" alt="WebSocket 상담 알림 실습 기본 화면" />
+                </a>
+                <div className="study-caption">
+                  <strong>상담 등록 전 화면</strong>
+                  <span>사용자 문의 등록과 관리자 상담 관리 화면 구성</span>
+                </div>
+              </div>
+
+              <div className="study-preview">
+                <a href="/images/websocket_practice_answer.JPG" target="_blank" rel="noreferrer">
+                  <img src="/images/websocket_practice_answer.JPG" alt="WebSocket 상담 답변 완료 화면" />
+                </a>
+                <div className="study-caption">
+                  <strong>답변 완료 화면</strong>
+                  <span>답변 등록 후 ANSWERED 상태와 사용자 알림 표시</span>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div className="study-preview">
-            <a href="/images/websocket_practice_answer.JPG" target="_blank" rel="noreferrer">
-              <img src="/images/websocket_practice_answer.JPG" alt="WebSocket 상담 답변 완료 화면" />
-            </a>
-            <div className="study-caption">
-              <strong>답변 완료 화면</strong>
-              <span>답변 등록 후 ANSWERED 상태와 사용자 알림 표시</span>
+        <section className="section study-section">
+          <div className="section-head">
+            <p className="section-kicker">Mini Full-stack Project</p>
+            <h2>Plant Watering Tracker</h2>
+            <p>
+              팀 프로젝트 이후 Spring Boot와 Docker Compose 사용 경험을 보완하기 위해 진행한
+              식물 물주기 관리 미니 풀스택 프로젝트입니다.
+            </p>
+          </div>
+
+          <div className="study-showcase">
+            <div className="study-main">
+              <div className="study-label-row">
+                <span>React</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>REST API</span>
+              </div>
+
+              <h3>식물 등록부터 다음 물주기 계산까지 이어지는 관리 흐름 구현</h3>
+
+              <p>
+                사용자가 식물 이름, 물주기 주기, 마지막 물 준 날짜를 입력하면
+                React 화면에서 Spring Boot API로 데이터를 전송하고, PostgreSQL에 저장되도록 구현했습니다.
+                백엔드에서는 마지막 물 준 날짜와 물주기 주기를 기준으로 다음 물 주는 날짜를 계산하고,
+                오늘 날짜와 비교하여 <strong> OK </strong>, <strong> DUE_TODAY </strong>,
+                <strong> OVERDUE </strong> 상태를 반환하도록 구성했습니다.
+              </p>
+
+              <div className="study-process">
+                <div>
+                  <strong>01</strong>
+                  <span>식물 등록</span>
+                </div>
+                <div>
+                  <strong>02</strong>
+                  <span>API 요청</span>
+                </div>
+                <div>
+                  <strong>03</strong>
+                  <span>DB 저장</span>
+                </div>
+                <div>
+                  <strong>04</strong>
+                  <span>날짜 계산</span>
+                </div>
+                <div>
+                  <strong>05</strong>
+                  <span>상태 표시</span>
+                </div>
+              </div>
+
+              <div className="study-point-box">
+                <p>
+                  <strong>구현 포인트</strong>
+                  단순 CRUD에서 끝내지 않고, 날짜 계산 로직과 상태 판단 로직을 백엔드에서 처리했습니다.
+                  또한 Docker Compose를 사용해 Spring Boot 백엔드와 PostgreSQL 데이터베이스를
+                  함께 실행할 수 있도록 구성하며 컨테이너 기반 실행 환경을 실습했습니다.
+                </p>
+              </div>
+
+              <ul>
+                <li>Spring Boot 기반 식물 CRUD REST API 구현</li>
+                <li>React와 Axios를 사용한 API 연동</li>
+                <li>PostgreSQL을 사용한 식물 데이터 저장</li>
+                <li>마지막 물 준 날짜 기준 다음 물주기 날짜 계산</li>
+                <li>Docker Compose로 백엔드와 DB 컨테이너 실행</li>
+              </ul>
+
+              <div className="link-row">
+                <a
+                  href="https://github.com/sdolikeim/Plant_Watering_Tracker"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+
+            <div className="study-preview-area">
+              <div className="study-preview main-preview">
+                <a href="/images/WaterTracker.JPG" target="_blank" rel="noreferrer">
+                  <img
+                    src="/images/WaterTracker.JPG"
+                    alt="Plant Watering Tracker 메인 화면"
+                  />
+                </a>
+                <div className="study-caption">
+                  <strong>식물 물주기 관리 화면</strong>
+                  <span>
+                    식물 등록, 목록 조회, 다음 물 주는 날짜 계산, 물주기 상태 표시를 구현한 React 화면입니다.
+                  </span>
+                </div>
+              </div>
+
+              <div className="study-preview">
+                <a href="/images/DockerCompose.JPG" target="_blank" rel="noreferrer">
+                  <img
+                    src="/images/DockerCompose.JPG"
+                    alt="Docker Compose 실행 화면"
+                  />
+                </a>
+                <div className="study-caption">
+                  <strong>Docker Compose 실행 화면</strong>
+                  <span>
+                    PostgreSQL 컨테이너와 Spring Boot 백엔드 컨테이너를 함께 실행한 화면입니다.
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
         <section className="section">
           <h2>Resume Statement</h2>
@@ -548,13 +664,15 @@ function App() {
 
             <p>
               상담 기능도 문의 등록에서 끝나는 것이 아니라, 관리자가 답변을 등록하고 사용자가 다시
-              상담창에서 답변 상태와 내용을 확인할 수 있도록 구성했습니다.
+              상담창에서 답변 상태와 내용을 확인할 수 있도록 구성했습니다. 기능 구현 후에는 화면 동작,
+              DB 저장 결과, 상태 변경 흐름을 함께 확인하며 기능이 끊기지 않도록 보완했습니다.
             </p>
 
             <p>
-              아직 실무 경험은 부족하지만, 맡은 기능을 그냥 넘기지 않고 끝까지 이해하려고 노력합니다.
-              앞으로도 기능의 정상 동작뿐 아니라 사용자의 다음 행동과 예외 상황까지 함께 확인하는
-              개발자로 성장하고 싶습니다.
+              아직 실무 경험은 부족하지만, 맡은 기능을 그냥 넘기지 않고 끝까지 실행해보며 이해하려고 노력합니다.
+              팀 프로젝트에서는 사용자 흐름과 예외 상황을 중심으로 기능을 구현했고, 개인 미니 프로젝트에서는
+              Spring Boot API, React 연동, Docker Compose 실행 환경까지 직접 구성하며 부족한 부분을 보완했습니다.
+              앞으로도 기능의 정상 동작뿐 아니라 데이터 흐름과 운영 환경까지 함께 확인하는 백엔드 개발자로 성장하고 싶습니다.
             </p>
           </div>
         </section>
@@ -566,7 +684,7 @@ function App() {
             <h3>휴먼IT | 디지털컨버전스 중심 데이터 처리 SW 개발자 양성 과정</h3>
             <p>2025.12.16 ~ 2026.06.15</p>
             <p>
-              Java, Spring Boot, React, Oracle 기반 웹 개발 과정 수료 예정입니다.
+              Java, Spring Boot, React, Oracle 기반 웹 개발 과정 수료했습니다.
               REST API 설계, 데이터베이스 연동, 프론트엔드 화면 구현, GitHub 협업을 경험했습니다.
             </p>
           </div>
