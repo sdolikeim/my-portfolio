@@ -34,7 +34,7 @@ function App() {
           <p>
             기능을 구현한 뒤에는 화면 동작뿐 아니라 DB 저장 결과, 사용자 흐름,
             예외 상황까지 함께 확인하려고 합니다. 부족한 부분은 미니 프로젝트로 따로 실습하며
-            백엔드 API, 프론트엔드 연동, Docker 실행 환경까지 경험을 넓혀가고 있습니다.
+            백엔드 API, 프론트엔드 연동, Docker 및 Kubernetes 실행 환경까지 경험을 넓혀가고 있습니다.
           </p>
         </section>
 
@@ -88,7 +88,7 @@ function App() {
 
             <div className="card">
               <h3>Tools</h3>
-              <p>Git, GitHub, VS Code, Postman, Thunder Client, Docker, Docker Compose</p>
+              <p>Git, GitHub, VS Code, Postman, Thunder Client, Docker, Docker Compose, Kubernetes</p>
             </div>
           </div>
         </section>
@@ -542,7 +542,7 @@ function App() {
             <p className="section-kicker">Mini Full-stack Project</p>
             <h2>Plant Watering Tracker</h2>
             <p>
-              팀 프로젝트 이후 Spring Boot와 Docker Compose 사용 경험을 보완하기 위해 진행한
+              팀 프로젝트 이후 Spring Boot, Docker Compose, Kubernetes 사용 경험을 보완하기 위해 진행한
               식물 물주기 관리 미니 풀스택 프로젝트입니다.
             </p>
           </div>
@@ -554,6 +554,7 @@ function App() {
                 <span>Spring Boot</span>
                 <span>PostgreSQL</span>
                 <span>Docker</span>
+                <span>Kubernetes</span>
                 <span>REST API</span>
               </div>
 
@@ -586,7 +587,7 @@ function App() {
                 </div>
                 <div>
                   <strong>05</strong>
-                  <span>상태 표시</span>
+                  <span>K8s 실행</span>
                 </div>
               </div>
 
@@ -594,8 +595,9 @@ function App() {
                 <p>
                   <strong>구현 포인트</strong>
                   단순 CRUD에서 끝내지 않고, 날짜 계산 로직과 상태 판단 로직을 백엔드에서 처리했습니다.
-                  또한 Docker Compose를 사용해 Spring Boot 백엔드와 PostgreSQL 데이터베이스를
-                  함께 실행할 수 있도록 구성하며 컨테이너 기반 실행 환경을 실습했습니다.
+                  Docker Compose로 Spring Boot 백엔드와 PostgreSQL 실행 환경을 구성했고,
+                  추가로 Kubernetes Deployment와 Service를 작성해 백엔드와 DB를 로컬 Kubernetes 환경에서 실행해보았습니다.
+                  React 화면에서 Kubernetes NodePort로 노출한 백엔드 API에 요청을 보내 식물 등록과 목록 조회가 정상 동작하는 것을 확인했습니다.
                 </p>
               </div>
 
@@ -605,6 +607,8 @@ function App() {
                 <li>PostgreSQL을 사용한 식물 데이터 저장</li>
                 <li>마지막 물 준 날짜 기준 다음 물주기 날짜 계산</li>
                 <li>Docker Compose로 백엔드와 DB 컨테이너 실행</li>
+                <li>Kubernetes Deployment와 Service로 백엔드/DB 실행 실습</li>
+                <li>NodePort를 통해 React 화면에서 Kubernetes 백엔드 API 요청 확인</li>
               </ul>
 
               <div className="link-row">
@@ -648,6 +652,22 @@ function App() {
                   </span>
                 </div>
               </div>
+
+              <div className="study-preview">
+                <a href="/images/KubernetesPractice.JPG" target="_blank" rel="noreferrer">
+                  <img
+                    src="/images/KubernetesPractice.JPG"
+                    alt="Kubernetes 실행 확인 화면"
+                  />
+                </a>
+                <div className="study-caption">
+                  <strong>Kubernetes 실행 확인</strong>
+                  <span>
+                    Spring Boot 백엔드와 PostgreSQL을 Kubernetes Deployment와 Service로 실행하고,
+                    NodePort를 통해 백엔드 API 접근을 확인한 화면입니다.
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -671,8 +691,8 @@ function App() {
             <p>
               아직 실무 경험은 부족하지만, 맡은 기능을 그냥 넘기지 않고 끝까지 실행해보며 이해하려고 노력합니다.
               팀 프로젝트에서는 사용자 흐름과 예외 상황을 중심으로 기능을 구현했고, 개인 미니 프로젝트에서는
-              Spring Boot API, React 연동, Docker Compose 실행 환경까지 직접 구성하며 부족한 부분을 보완했습니다.
-              앞으로도 기능의 정상 동작뿐 아니라 데이터 흐름과 운영 환경까지 함께 확인하는 백엔드 개발자로 성장하고 싶습니다.
+              Spring Boot API, React 연동, Docker Compose와 Kubernetes 실행 환경까지 직접 구성하며 부족한 부분을 보완했습니다.
+              앞으로도 기능의 정상 동작뿐 아니라 데이터 흐름과 실행 환경까지 함께 확인하는 백엔드 개발자로 성장하고 싶습니다.
             </p>
           </div>
         </section>
