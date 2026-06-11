@@ -27,9 +27,9 @@ function App() {
         <section className="section">
           <h2>About Me</h2>
           <p>
-            Java/Spring Boot 백엔드 개발자를 목표로 학습하고 있습니다.
-            팀 프로젝트에서는 상품 도메인을 담당하여 상품 조회, 관리자 상품 관리,
-            이미지 업로드/삭제, 리뷰 검증, 북마크, 상담 문의/답변 기능을 구현했습니다.
+            기능을 구현한 뒤에는 화면 동작뿐 아니라 DB 저장 결과, 사용자 흐름,
+            예외 상황까지 함께 확인하려고 합니다. 부족한 부분은 미니 프로젝트로 따로 실습하며
+            백엔드 API, 프론트엔드 연동, Servlet/JSP 구조, Linux 명령어, Docker 및 Kubernetes 실행 환경까지 경험을 넓혀가고 있습니다.
           </p>
           <p>
             기능을 구현한 뒤에는 화면 동작뿐 아니라 DB 저장 결과, 사용자 흐름,
@@ -72,8 +72,8 @@ function App() {
           <h2>Skills</h2>
           <div className="skill-grid">
             <div className="card">
-              <h3>Backend</h3>
-              <p>Java, Spring Boot, Spring MVC, JPA, REST API, Session 기반 인증</p>
+            <h3>Backend</h3>
+            <p>Java, Spring Boot, Spring MVC, JPA, Servlet, JSP, MyBatis, REST API, Session 기반 인증</p>
             </div>
 
             <div className="card">
@@ -87,8 +87,8 @@ function App() {
             </div>
 
             <div className="card">
-              <h3>Tools</h3>
-              <p>Git, GitHub, VS Code, Postman, Thunder Client, Docker, Docker Compose, Kubernetes</p>
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Eclipse, Postman, Thunder Client, Docker, Docker Compose, Kubernetes, Linux/Ubuntu</p>
             </div>
           </div>
         </section>
@@ -672,6 +672,215 @@ function App() {
           </div>
         </section>
 
+        <section className="section study-section">
+        <div className="section-head">
+          <p className="section-kicker">Mini Backend Project</p>
+          <h2>Servlet MyBatis Memo Board</h2>
+          <p>
+            Spring Boot를 사용하기 전, Servlet/JSP 환경에서 요청과 응답 흐름을 직접 구성하고
+            MyBatis Mapper XML을 사용해 Oracle DB와 연동한 메모 게시판 미니 프로젝트입니다.
+          </p>
+        </div>
+
+        <div className="study-showcase">
+          <div className="study-main">
+            <div className="study-label-row">
+              <span>Java 8</span>
+              <span>Servlet</span>
+              <span>JSP</span>
+              <span>MyBatis</span>
+              <span>Oracle</span>
+              <span>Tomcat</span>
+            </div>
+
+            <h3>Servlet/JSP 기반 CRUD와 이미지 첨부 흐름 구현</h3>
+
+            <p>
+              사용자가 메모 제목, 작성자, 내용을 입력하면 Servlet Controller가 요청을 받고,
+              Service와 DAO를 거쳐 MyBatis Mapper XML의 SQL이 실행되도록 구현했습니다.
+              Oracle DB에 저장된 메모 목록을 JSP 화면에서 조회하고, 등록·수정·삭제 기능과
+              이미지 첨부 및 이미지 수정 기능을 함께 구현했습니다.
+            </p>
+
+            <div className="study-process">
+              <div>
+                <strong>01</strong>
+                <span>JSP 요청</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>Servlet 처리</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>Service 분리</span>
+              </div>
+              <div>
+                <strong>04</strong>
+                <span>MyBatis SQL</span>
+              </div>
+              <div>
+                <strong>05</strong>
+                <span>Oracle 저장</span>
+              </div>
+            </div>
+
+            <div className="study-point-box">
+              <p>
+                <strong>구현 포인트</strong>
+                Spring Boot의 자동 설정에 의존하지 않고, Servlet/JSP에서 요청 파라미터를 직접 받고
+                Controller, Service, DAO, DTO, Mapper 계층으로 역할을 분리했습니다.
+                이미지 파일은 서버 upload 디렉터리에 저장하고, DB에는 이미지 파일명을 저장해
+                JSP 화면에서 첨부 이미지를 조회할 수 있도록 처리했습니다.
+              </p>
+            </div>
+
+            <ul>
+              <li>Servlet Controller 기반 메모 등록, 조회, 수정, 삭제 구현</li>
+              <li>JSP 화면에서 등록 form, 목록 출력, 수정 form 토글 처리</li>
+              <li>MyBatis Mapper XML을 사용해 SQL 분리</li>
+              <li>Oracle DB 테이블과 시퀀스를 사용한 데이터 저장</li>
+              <li>Servlet Multipart 기능을 사용한 이미지 업로드 구현</li>
+              <li>이미지 수정 시 기존 이미지 유지 또는 새 이미지로 교체 처리</li>
+            </ul>
+
+            <div className="link-row">
+              <a
+                href="https://github.com/sdolikeim/Servlet_Memo_Board"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Repository
+              </a>
+            </div>
+          </div>
+
+          <div className="study-preview-area">
+            <div className="study-preview main-preview">
+              <a href="/images/Servlet_Memo_Board.JPG" target="_blank" rel="noreferrer">
+                <img
+                  src="/images/Servlet_Memo_Board.JPG"
+                  alt="Servlet MyBatis Memo Board 화면"
+                />
+              </a>
+              <div className="study-caption">
+                <strong>메모 게시판 실행 화면</strong>
+                <span>
+                  Servlet/JSP, MyBatis, Oracle을 사용해 메모 등록, 조회, 수정, 삭제와 이미지 첨부를 구현한 화면입니다.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section study-section">
+        <div className="section-head">
+          <p className="section-kicker">Linux Practice</p>
+          <h2>Linux Log Analyzer Practice</h2>
+          <p>
+            Docker Ubuntu 컨테이너를 사용해 Linux 실습 환경을 구성하고,
+            서버 로그 분석 상황을 가정해 기본 명령어와 Shell Script 흐름을 연습한 미니 실습입니다.
+          </p>
+        </div>
+
+        <div className="study-showcase">
+          <div className="study-main">
+            <div className="study-label-row">
+              <span>Linux</span>
+              <span>Ubuntu</span>
+              <span>Docker</span>
+              <span>Shell</span>
+              <span>grep</span>
+              <span>chmod</span>
+            </div>
+
+            <h3>Docker Ubuntu 환경에서 서버 로그 검색과 분석 명령어 실습</h3>
+
+            <p>
+              개인 PC에 직접 Linux를 설치하지 않고 Docker Ubuntu 컨테이너를 실행해 실습 환경을 구성했습니다.
+              컨테이너 내부에서 로그 파일을 만들고, <strong>grep</strong>, <strong>wc</strong>,
+              <strong>find</strong>, <strong>chmod</strong> 같은 명령어를 사용해 ERROR/WARN 로그를 검색하고
+              개수를 확인하는 흐름을 연습했습니다.
+            </p>
+
+            <div className="study-process">
+              <div>
+                <strong>01</strong>
+                <span>Ubuntu 실행</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>로그 생성</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>grep 검색</span>
+              </div>
+              <div>
+                <strong>04</strong>
+                <span>개수 확인</span>
+              </div>
+              <div>
+                <strong>05</strong>
+                <span>스크립트화</span>
+              </div>
+            </div>
+
+            <div className="study-point-box">
+              <p>
+                <strong>학습 포인트</strong>
+                백엔드 개발자가 서버 로그를 확인하는 상황을 가정하고,
+                Linux 기본 명령어와 파이프라인 사용법을 익혔습니다.
+                단순 명령어 입력에서 끝내지 않고 반복적으로 사용할 수 있는 로그 분석 스크립트로 정리했습니다.
+              </p>
+            </div>
+
+            <ul>
+              <li>Docker Ubuntu 22.04 컨테이너 기반 Linux 실습 환경 구성</li>
+              <li>pwd, ls, cat 등 기본 파일 탐색 명령어 실습</li>
+              <li>grep을 사용한 ERROR/WARN 로그 검색</li>
+              <li>wc -l을 사용한 로그 개수 확인</li>
+              <li>chmod +x를 사용한 Shell Script 실행 권한 부여</li>
+              <li>서버 로그 분석 상황을 가정한 미니 실습 정리</li>
+            </ul>
+          </div>
+
+          <div className="study-preview-area">
+            <div className="study-preview main-preview">
+              <a href="/images/DockerUbuntu.JPG" target="_blank" rel="noreferrer">
+                <img
+                  src="/images/DockerUbuntu.JPG"
+                  alt="Docker Ubuntu 컨테이너 실행 화면"
+                />
+              </a>
+              <div className="study-caption">
+                <strong>Docker Ubuntu 실행</strong>
+                <span>
+                  Docker로 Ubuntu 22.04 컨테이너를 실행하고 Linux 환경을 확인한 화면입니다.
+                </span>
+              </div>
+            </div>
+
+            <div className="study-preview">
+              <a href="/images/UbuntuLinuxGrep.JPG" target="_blank" rel="noreferrer">
+                <img
+                  src="/images/UbuntuLinuxGrep.JPG"
+                  alt="Linux grep 로그 분석 화면"
+                />
+              </a>
+              <div className="study-caption">
+                <strong>로그 분석 명령어 실습</strong>
+                <span>
+                  app.log 파일에서 grep으로 ERROR 로그를 검색하고 서버 로그 분석 흐름을 확인한 화면입니다.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
         <section className="section">
           <h2>Resume Statement</h2>
 
@@ -691,8 +900,9 @@ function App() {
             <p>
               아직 실무 경험은 부족하지만, 맡은 기능을 그냥 넘기지 않고 끝까지 실행해보며 이해하려고 노력합니다.
               팀 프로젝트에서는 사용자 흐름과 예외 상황을 중심으로 기능을 구현했고, 개인 미니 프로젝트에서는
-              Spring Boot API, React 연동, Docker Compose와 Kubernetes 실행 환경까지 직접 구성하며 부족한 부분을 보완했습니다.
-              앞으로도 기능의 정상 동작뿐 아니라 데이터 흐름과 실행 환경까지 함께 확인하는 백엔드 개발자로 성장하고 싶습니다.
+              Spring Boot API, React 연동, Servlet/JSP와 MyBatis 구조, Linux 로그 분석, Docker Compose와 Kubernetes 실행 환경까지
+              직접 구성하며 부족한 부분을 보완했습니다. 앞으로도 기능의 정상 동작뿐 아니라 데이터 흐름과 실행 환경까지
+              함께 확인하는 백엔드 개발자로 성장하고 싶습니다.
             </p>
           </div>
         </section>
