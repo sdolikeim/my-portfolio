@@ -17,7 +17,7 @@ function App() {
               GitHub
             </a>
             <a href="https://github.com/alphaengneering02-dev/3H_Furniture" target="_blank" rel="noreferrer">
-              Project Repository
+              Main Project Repository
             </a>
           </div>
         </div>
@@ -30,11 +30,6 @@ function App() {
             기능을 구현한 뒤에는 화면 동작뿐 아니라 DB 저장 결과, 사용자 흐름,
             예외 상황까지 함께 확인하려고 합니다. 부족한 부분은 미니 프로젝트로 따로 실습하며
             백엔드 API, 프론트엔드 연동, Servlet/JSP 구조, Linux 명령어, Docker 및 Kubernetes 실행 환경까지 경험을 넓혀가고 있습니다.
-          </p>
-          <p>
-            기능을 구현한 뒤에는 화면 동작뿐 아니라 DB 저장 결과, 사용자 흐름,
-            예외 상황까지 함께 확인하려고 합니다. 부족한 부분은 미니 프로젝트로 따로 실습하며
-            백엔드 API, 프론트엔드 연동, Docker 및 Kubernetes 실행 환경까지 경험을 넓혀가고 있습니다.
           </p>
         </section>
 
@@ -70,10 +65,10 @@ function App() {
 
         <section className="section">
           <h2>Skills</h2>
-          <div className="skill-grid">
-            <div className="card">
-            <h3>Backend</h3>
-            <p>Java, Spring Boot, Spring MVC, JPA, Servlet, JSP, MyBatis, REST API, Session 기반 인증</p>
+            <div className="skill-grid">
+              <div className="card">
+              <h3>Backend</h3>
+              <p>Java, Spring Boot, Spring MVC, JPA, Servlet, JSP, MyBatis, REST API, Session 기반 인증</p>
             </div>
 
             <div className="card">
