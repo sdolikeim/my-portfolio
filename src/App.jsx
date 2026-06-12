@@ -928,7 +928,7 @@ function App() {
           </p>
 
           <p>
-            Project Repository:{' '}
+            Main Project Repository:{' '}
             <a href="https://github.com/alphaengneering02-dev/3H_Furniture" target="_blank" rel="noreferrer">
               https://github.com/alphaengneering02-dev/3H_Furniture
             </a>
